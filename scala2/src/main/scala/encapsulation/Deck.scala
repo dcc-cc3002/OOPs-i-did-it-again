@@ -6,9 +6,22 @@
  * work. If not, see <http://creativecommons.org/licenses/by/4.0/>.
  */
 package cl.dcc.uchile.oop
-package composition
+package encapsulation
 
-class Card(val name: String, val text: String) {
-  override def toString = s"Card { name: '$name', text: '$text' }"
+import composition.Card
+
+import scala.util.Random
+
+class Deck(private var _cards: List[Card]) {
+  // Getter
+  def cards: List[Card] = _cards
+
+  // Setter
+  def cards_=(cards: List[Card]): Unit = {
+    _cards = cards
+  }
+
+  def shuffle(): Unit = {
+    cards = Random.shuffle(cards)
+  }
 }
-

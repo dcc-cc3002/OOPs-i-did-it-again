@@ -6,9 +6,13 @@
  * work. If not, see <http://creativecommons.org/licenses/by/4.0/>.
  */
 package cl.dcc.uchile.oop
-package composition
+package delegation
 
-class Card(val name: String, val text: String) {
-  override def toString = s"Card { name: '$name', text: '$text' }"
+object Main {
+  def main(args: Array[String]): Unit = {
+    val player = new Player()
+    println(player.deck.cards)
+    player.shuffleDeck()
+    println(player.deck.cards)
+  }
 }
-

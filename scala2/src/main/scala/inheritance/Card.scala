@@ -6,9 +6,8 @@
  * work. If not, see <http://creativecommons.org/licenses/by/4.0/>.
  */
 package cl.dcc.uchile.oop
-package composition
+package inheritance
 
-class Card(val name: String, val text: String) {
-  override def toString = s"Card { name: '$name', text: '$text' }"
+class Card(val name: String) {
+  override def toString: String = name
 }
-

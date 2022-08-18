@@ -6,9 +6,12 @@
  * work. If not, see <http://creativecommons.org/licenses/by/4.0/>.
  */
 package cl.dcc.uchile.oop
-package composition
+package transparency
 
-class Card(val name: String, val text: String) {
-  override def toString = s"Card { name: '$name', text: '$text' }"
+import composition.Card
+
+import scala.collection.mutable.ArrayBuffer
+
+class Deck(private val _cards: ArrayBuffer[Card]) {
+  def cards: List[Card] = _cards.toList
 }
-

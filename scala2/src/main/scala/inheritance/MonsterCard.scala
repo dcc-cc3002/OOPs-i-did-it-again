@@ -6,9 +6,11 @@
  * work. If not, see <http://creativecommons.org/licenses/by/4.0/>.
  */
 package cl.dcc.uchile.oop
-package composition
+package inheritance
 
-class Card(val name: String, val text: String) {
-  override def toString = s"Card { name: '$name', text: '$text' }"
+class MonsterCard(name: String,
+                  val level: Int,
+                  val attack: Int,
+                  val defense: Int) extends Card(name) {
+  override def toString = s"$name L$level ($attack/$defense)"
 }
-

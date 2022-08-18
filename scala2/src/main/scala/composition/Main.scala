@@ -1,6 +1,3 @@
-package cl.dcc.uchile.oop
-package composition
-
 /*
  * "oops-i-did-it-again" (c) by Ignacio Slater M.
  * "oops-i-did-it-again" is licensed under a
@@ -8,6 +5,8 @@ package composition
  * You should have received a copy of the license along with this
  * work. If not, see <http://creativecommons.org/licenses/by/4.0/>.
  */
+package cl.dcc.uchile.oop
+package composition
 
 object Main {
   def main(args: Array[String]): Unit = {

@@ -5,21 +5,21 @@
  * You should have received a copy of the license along with this
  * work. If not, see <http://creativecommons.org/licenses/by/4.0/>.
  */
-package cl.uchile.dcc.oop.encapsulation
+package cl.uchile.dcc.oop.delegation
 
 import cl.uchile.dcc.oop.composition.Card
+import cl.uchile.dcc.oop.encapsulation.Deck
 
 class Player {
-  private val deck = Deck(
+  val deck = Deck(
     mutableListOf(
       Card(
-        "Card 1",
-        "Card 1 text.",
-        1000
+        "Blazing Inpachi",
+        "A wicked wooden spirit now burning in flames. Its fire attack is powerful, but it will " +
+            "soon be nothing but ashes."
       ), Card(
-        "Card 2",
-        "Card 2 text.",
-        2000
+        "Gemini Elf",
+        "Elf twins that alternate their attacks."
       )
     )
   )
@@ -27,4 +27,11 @@ class Player {
   fun shuffleDeck() {
     deck.shuffle()
   }
+}
+
+fun main() {
+  val player = Player()
+  println(player.deck.cards)
+  player.shuffleDeck()
+  println(player.deck.cards)
 }
