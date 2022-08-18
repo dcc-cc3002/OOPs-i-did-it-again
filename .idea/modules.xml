@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/Java/Java.iml" filepath="$PROJECT_DIR$/Java/Java.iml" />
       <module fileurl="file://$PROJECT_DIR$/kotlin/kotlin.iml" filepath="$PROJECT_DIR$/kotlin/kotlin.iml" />
       <module fileurl="file://$PROJECT_DIR$/oops-i-did-it-again.iml" filepath="$PROJECT_DIR$/oops-i-did-it-again.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala2.iml" filepath="$PROJECT_DIR$/.idea/modules/scala2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scala2/.idea/modules/scala2-build.iml" filepath="$PROJECT_DIR$/scala2/.idea/modules/scala2-build.iml" />
     </modules>
   </component>
 </project>

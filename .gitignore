@@ -97,8 +97,8 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 ### Scala template
-*.class
-*.log
+project/
+target/
 
 ### Windows template
 # Windows thumbnail cache files
