@@ -12,6 +12,16 @@
         </option>
         <option name="sbtVersion" value="1.7.1" />
       </SbtProjectSettings>
+      <SbtProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/scala3" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/scala3" />
+            <option value="$PROJECT_DIR$/scala3/project" />
+          </set>
+        </option>
+        <option name="sbtVersion" value="1.7.1" />
+      </SbtProjectSettings>
     </option>
   </component>
 </project>
